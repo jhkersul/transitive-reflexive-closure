@@ -1,9 +1,9 @@
-defmodule TransitiveReflexiveClosure.MixProject do
+defmodule TRC.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :transitive_reflexive_closure,
+      app: :trc,
       version: "0.1.0",
       elixir: "~> 1.8",
       start_permanent: Mix.env() == :prod,
