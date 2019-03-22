@@ -84,8 +84,8 @@ defmodule TRC do
     find_edges(List.delete_at(graph_r, 0), new_map)
   end
 
-  def group_edges(graph_r) do
-    graph_r
+  def group_edges(edges_map) do
+    edges_map
     |> Enum.map(fn {key, values} ->
       # Generating all transitions
       Enum.map(values, fn value -> {key, value} end)
